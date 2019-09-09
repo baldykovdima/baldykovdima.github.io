@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "antd/dist/antd.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import "./app.css";
 
 function App() {
+  AOS.init({ duration: 1000, delay: 100 });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <h2 data-aos="fade-zoom-in">I</h2>
+      </section>
+      <section>
+        <h2 data-aos="flip-left" data-aos-once>
+          am
+        </h2>
+      </section>
+      <section>
+        <h2 data-aos="slide-right" data-aos-once>
+          developer
+        </h2>
+      </section>
+    </>
   );
 }
 
